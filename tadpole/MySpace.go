@@ -35,6 +35,11 @@ func (space *MySpace) OnSpaceCreated() {
 	//for i := 0; i < M; i++ {
 	//	space.CreateEntity("Monster", entity.Vector3{})
 	//}
+
+	rand.Seed(time.Now().Unix())
+	for i := 0; i < 30; i++ {
+		space.CreateEntity("Dewdrop", space.getRandPosition())
+	}
 }
 
 func (space *MySpace) DumpEntityStatus() {
