@@ -10,7 +10,7 @@ type Dewdrop struct {
 }
 
 func (dewdrop *Dewdrop) DescribeEntityType(desc *entity.EntityTypeDesc) {
-	desc.SetUseAOI(true, 10000)
+	desc.SetUseAOI(true, 3000)
 	desc.DefineAttr("amount", "AllClients")
 }
 
